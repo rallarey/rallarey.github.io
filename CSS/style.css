@@ -1,0 +1,45 @@
+    text-align: center;
+}
+
+body {
+    background-color: mistyrose;
+    margin:auto;
+    justify-content: center;
+}
+
+.topnav {
+    background-color: #00539F;
+    height: 50px;
+    overflow: hidden;
+}
+
+.topnav a {
+    display: inline-block;
+    background-color: red;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+	color:  white;
+	font-size: 20px;
+	text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.topnav a.active {
+    background-color: #ddd;
+}
+
+img {
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 575px;
+    height: 650px;
+}
+
+h1 {
+    font-size: 200%
+}
