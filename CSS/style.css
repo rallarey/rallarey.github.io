@@ -3,34 +3,36 @@ html {
 }
 
 body {
-    background-color: mistyrose;
+    background-color: #EDF4ED;
     margin:auto;
     justify-content: center;
 }
 
 .topnav {
-    background-color: #00539F;
+    background-color: #424B54;
     height: 50px;
     overflow: hidden;
 }
 
 .topnav a {
     display: inline-block;
-    background-color: red;
+    background-color: #93A8AC;
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
-	color:  white;
+	color: #EDF4ED;
 	font-size: 20px;
 	text-decoration: none;
+    border-radius: 5px;
 }
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #E2B4BD;
     color: black;
   }
 
 .topnav a.active {
-    background-color: #ddd;
+    background-color:#EDF4ED;
+    color: black;
 }
 
 img {
@@ -39,8 +41,37 @@ img {
     margin-left: auto;
     width: 575px;
     height: 650px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
+    font-size: 300%
+}
+
+h2 {
     font-size: 200%
+}
+
+h3 {
+    font-size: 150%
+}
+
+h1, h2, h3{
+    font-family: Bebas Neue, sans-serif;
+}
+
+.aboutme {
+    margin:0 auto; 
+    width:50%;
+}
+
+ul li {
+	text-align: left;
+	font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
