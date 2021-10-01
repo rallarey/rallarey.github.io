@@ -2,16 +2,13 @@
     emailjs.init("user_yAR7CIB59puxQFdKk8LId");
 })();
 
-window.onload = function() {
+function formCall() {
     document.getElementById('contact').addEventListener('submit', function (event) {
         event.preventDefault();
         if (validateFname() && validateLname() && validateEmail() && validatePhone() && validateMessage()) {
             emailjs.sendForm("service_elc84qu", "template_b8bxmfi", this)
                 .then(function () {
                     console.log("SUCCESS");
-                },function (error){
-                    console.log('FAILED...', error);
-        
                 });
             document.getElementById("contact").reset();
             window.alert("Email sent!");

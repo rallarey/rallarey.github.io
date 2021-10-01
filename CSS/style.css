@@ -73,7 +73,7 @@ h1, h2, h3{
     flex-direction: column;
 }
 
-#contact{
+#contact-form{
     width:50%;
     display: inline-grid;
     border-radius: 10px;
