@@ -1,16 +1,14 @@
-(function() {
-    emailjs.init("user_yAR7CIB59puxQFdKk8LId");
-})();
-
-function formCall() {
-    document.getElementById('contact').addEventListener('submit', function (event) {
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
         if (validateFname() && validateLname() && validateEmail() && validatePhone() && validateMessage()) {
-            emailjs.sendForm("service_elc84qu", "template_b8bxmfi", this)
-                .then(function () {
+            emailjs.sendForm("service_elc84qu", "template_b8bxmfi", document.getElementById("contact-form"))
+                .then(function() {
                     console.log("SUCCESS");
+                }, function(error){
+                    console.log("FAILED");
                 });
-            document.getElementById("contact").reset();
+            document.getElementById("contact-form").reset();
             window.alert("Email sent!");
         }
         else if (!validateFname()) {
@@ -27,6 +25,8 @@ function formCall() {
         }
         else if (!validateMessage()) {
             alert("Please fill in all required fields.")
+        } else {
+            alert("fail");
         }
     });
 }
