@@ -39,8 +39,8 @@ img {
     display:block;
     margin-right: auto;
     margin-left: auto;
-    width: 575px;
-    height: 650px;
+    width: 300px;
+    height: 400px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -64,6 +64,52 @@ h1, h2, h3{
     margin:0 auto; 
     width:50%;
 }
+
+.contactform {
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact{
+    width:50%;
+    display: inline-grid;
+    border-radius: 10px;
+}
+
+.field-label{
+    float: left;
+}
+
+.field-input{
+    float: right;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    border: 1px solid #424B54;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#submit{
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    border-radius: 5px;
+    margin: 25px;
+    padding: 15px 20px;
+}
+
+.button {
+    background-color:#424B54;
+    color: #EDF4ED;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
 
 ul li {
 	text-align: left;
