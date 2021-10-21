@@ -71,4 +71,3 @@ function validateMessage() {
         return true;  
     }
 }
-    

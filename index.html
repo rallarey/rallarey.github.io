@@ -12,54 +12,32 @@
 		gtag('config', 'UA-210739546-1');
 	</script>
     <meta charset="utf-8">
+	<meta name="viewport" content="'width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="CSS/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Personal Website</title>
 </head>
 
 <body>
-	<div class = "topnav">
-		<a href="https://mattm401.github.io/"><i class = "fa fa-arrow-left"></i> Previous Student</a>
-		<a href="https://mattm401.github.io/">Course Site</a>
-		<a class="active" href="index.html"><i class = "fa fa--fw fa-home"></i> Home Page</a>
-		<a href="/aboutMe.html"><i class="fa fa-fw fa-user"></i> About Me</a>
-		<a href="/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
-		<a href="https://anthonyym.github.io/">Next Student <i class = "fa fa-arrow-right"></i></a>
+	<div class = "topnav" id="myTopnav">
+		<a href="index.html" class="active"><i class = "fa fa--fw fa-home"></i> Home</a>
+		<a href="/aboutMe.html"><i class="fa fa-fw fa-user"></i> About</a>
+		<a href="/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+		<div class = "dropdown">
+			<button class = "dropbtn">Class Links
+				<i class = "fa fa-caret-down"></i>
+			</button>
+			<div class = "dropdown-content">
+				<a href="https://mattm401.github.io/"><i class = "fa fa-arrow-left"></i> Previous Student</a>
+				<a href="https://mattm401.github.io/">Course Site</a>
+				<a href="https://anthonyym.github.io/">Next Student <i class = "fa fa-arrow-right"></i></a>
+			</div>
+		</div>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 
 	<h1>Ryan Allarey</h1>
 	<!-- Ryan Allarey, CISC474-010, Personal Web Page 1, rallarey@udel.edu -->
 	<img src="/imgs/IMG_0441_Original.JPG" alt="Picture of Ryan Allarey">
-
+	<script src = "js/home.js"></script>
 </body>
-
-<!--
-	<body>
-	<div id="container" style= "height:auto; margin:0 auto; width:50%;">
-		<div class="page" style="width:680px; text-align:justify; margin:0 auto;">
-			<p>
-			<a href="https://mattm401.github.io/">Course Site</a>
-			</p>
-			<h1>Personal Website: About Me</h1>
-
-			Ryan Allarey, CISC474-010, Personal Web Page 1, rallarey@udel.edu
-
-			<p> 
-				<strong>Name (same name in class): </strong>
-				Ryan Allarey
-				<br>
-				<img src="/imgs/IMG_0441_Original.JPG" alt="Ryan Allarey">
-			</p>
-			
-			<h2>More About Me</h2>
-			<p>You can learn more about me and other students by clicking below!</p>
-			<p style="text-align:center;">
-				<a href="https://mattm401.github.io">Previous Student</a>
-				<a href="/html/aboutMe.html">Learn More About Me</a>
-				<a href="https://anthonyym.github.io">Next Student</a>
-				<br>
-			</p>
-		</div>
-	</div>
-</body>
--->
