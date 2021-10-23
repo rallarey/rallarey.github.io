@@ -100,7 +100,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:last-child), 
+    .topnav a:not(:first-child), 
     .dropdown .dropbtn {
         display: none;
     }
@@ -236,7 +236,7 @@ h1, h2, h3{
     padding: 15px 20px;
 }
 
-.button, .dropdown .dropbtn{
+.button, .dropdown .dropbown{
     background-color:#424B54;
     color: #EDF4ED;
     border-radius: 5px;
