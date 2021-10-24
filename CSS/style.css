@@ -44,17 +44,29 @@ body {
 
 #contact{
     background:#90CAF9;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 #portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     background: #EF9A9A;
 }
 
 #about-me{
+    display: flex;
+    flex-wrap: wrap;
     background: #FFE082;
+    align-content: center;
 }
 
 #home {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     background: #C5E1A5;
 }
 .topnav {
@@ -136,7 +148,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child), 
+    .topnav a:not(:last-child), 
     .dropdown .dropbtn {
         display: none;
     }
@@ -197,6 +209,9 @@ body {
 section {
     padding: 2rem;
     height: 600px;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
 }
 
 
@@ -251,14 +266,16 @@ section {
     padding: 15px 20px;
 }
 
-.button, .dropdown .dropbown{
+.button, .dropdown{
     background-color:#424B54;
     color: #EDF4ED;
     border-radius: 5px;
     display: inline-block;
     cursor: pointer;
 }
+
 .ending {
     text-align: center;
     font-size: 15px;
 }
+

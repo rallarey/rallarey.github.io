@@ -8,13 +8,13 @@ function myFunction() {
 }
     
 window.onscroll = function (){
-    myFunction()
+    stickyFunction()
 };
     
 var navbar = document.getElementById("myTopnav");
 var sticky = navbar.offsetTop;
     
-function myFunction(){
+function stickyFunction(){
     if (window.pageYOffset >= sticky){
         navbar.classList.add("sticky")
     } else {
