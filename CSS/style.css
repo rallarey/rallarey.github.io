@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -5,26 +9,6 @@ html{
 body {
     background-color: #EDF4ED;
     margin:0;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.left {
-    flex: 30%;
-    padding: 20px;
-}
-
-.middle {
-    flex: 30%;
-    padding: 20px;
-}
-
-.right {
-    flex: 3%;
-    padding: 20px;
 }
 
 .logo{
@@ -47,6 +31,37 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+}
+
+#contact a{
+    text-decoration:none;
+    font-size: 25px;
+    color: black;
+
+}
+
+#contact a:hover{
+    color: white;
+}
+
+.contact {
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 750px;
+}
+
+.contact-center {
+    max-width: 750px;
+    position: relative;
+    margin: 0;
+}
+
+.contact-content {
+    max-width: 750px;
+    font-size: 20px;
+    margin: 0;
+    justify-content: center;
 }
 
 #portfolio{
@@ -186,12 +201,6 @@ body {
     }
 }
 
-@media screen and (max-width: 600px){
-    .row{
-        flex-direction: column;
-    }
-}
-
 .content {
     padding: 15px;
 }
@@ -208,20 +217,9 @@ body {
 
 section {
     padding: 2rem;
-    height: 600px;
     display: flex;
     justify-content: center;
     z-index: 0;
-}
-
-
-.profile {
-    display:block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 300px;
-    height: 400px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .aboutme {
@@ -306,3 +304,37 @@ section {
     font-size: 15px;
 }
 
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #FFE082;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }

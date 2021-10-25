@@ -16,13 +16,15 @@
 	<link rel="stylesheet" href="CSS/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	
+	
 	<title>Personal Website</title>
 </head>
 
 <body>
 	<div class = "topnav" id="myTopnav">
 		<div class = "logo">
-			<a href="#">ryAllarey</a>
+			<a href="#">ryanAllarey</a>
 		</div>
 		<div class = "nav-content">
 			<div class = "dropdown">
@@ -45,8 +47,6 @@
 	<section id="home">
 		<h1>Ryan Allarey</h1>
 			<!--Ryan Allarey, CISC474-010, Personal Web Page 1, rallarey@udel.edu-->
-		
-		<img src="/imgs/IMG_0441_Original.JPG" alt="Picture of Ryan Allarey" class ="profile">
 	</section>
 	<section id="about-me">
 		<div class = "about">
@@ -62,29 +62,53 @@
 						enjoy my fair share of visual arts and creativity. I enjoy photography, videography, and everything in between. In my free time, I
 						play videogames, listening to music, or learning more about computers!
 					</p>
-					<p class = "section-text"><b>Funfact:</b> I've built multiple computers and keyboards (I own about six keyboards now).
+					<p class = "section-text"><b>Fun fact:</b> I've built multiple computers and keyboards (I own about six keyboards now).
 				</div>
-			</div>
-		</div>
-	</section>	
 
-	<section id="portfolio">
-		<h1>// PROJECTS</h1>
-		<div class = "row">
-			<div class = "left">
-				<h2>blah</h2>
-			</div>
-			<div class = "middle">
-				<h2>blah</h2>
-			</div>
-			<div class = "right">
-				<h2>blah</h2>
+				<h2 class = "section-header">// experience</h2>
+
+				<div class = "about-content">
+					<div class="tab">
+						<button class="tablinks" onclick="clickHandle(event, 'Cat')">TA/LA</button>
+						<button class="tablinks" onclick="clickHandle(event, 'Bear')">Tutor</button>
+						<button class="tablinks" onclick="clickHandle(event, 'Dog')">Food</button>
+					  </div>
+					
+					  <div id="Cat" class="tabcontent">
+						<p class = "section-text">I am currently studying Computer Science at the University of Delaware pursuing my Bachelor's of Arts. 
+							I've been studying for about 4 years now, and I enjoy programming and developing software!
+						</p>
+					  </div>
+					
+					  <div id="Bear" class="tabcontent">
+						<p class = "section-text"> blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+						</p>
+					  </div>
+					
+					  <div id="Dog" class="tabcontent">
+						<p class = "section-text"> filler words  filler words  filler words  filler words  filler words  filler words  filler words  filler words  filler words  filler words  filler words  filler words  filler words  
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
+	<section id="portfolio">
+		<h1>// PROJECTS</h1>
+	</section>
+
 	<section id="contact">
-		<p>CONTACT INFO</p>
+		<div class = "contact">
+			<div class = "contact-center">
+				<h2 class = "section-header">say hello</h2>
+				<div class = "contact-content">
+					<a href = "mailto:rfa19702@gmail.com"><i class="fa fa-envelope" style = "color: black"></i></a>
+					<a href = "https://www.github.com/rallarey"><i class="fab fa-github" style = "color: black"></i></a>
+					<a href = "https://www.linkedin.com/in/ryan-allarey"><i class="fab fa-linkedin" style = "color: black"></i></a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 
@@ -93,10 +117,11 @@
 	
 		<p>Built and designed by Ryan Allarey</p>
 		<p>All rights reserved. ©</p>
+		<!-- 
 		<a href = "https://www.github.com/rallarey"><i class="fab fa-github" style = "color: black"></i></a>
 		<a href = "https://www.linkedin.com/in/ryan-allarey"><i class="fab fa-linkedin" style = "color: black"></i></a>
 		<a href = "mailto:rfa19702@gmail.com"><i class="fa fa-envelope" style = "color: black"></i></a>
-	
+		-->
 	</footer>
 
 		
