@@ -117,7 +117,7 @@ body {
 
 .dropdown-content{
     display: none;
-    position: fixed;
+    position: absolute;
     background-color: #EDF4ED;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -148,7 +148,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:last-child), 
+    .topnav a:not(:first-child), 
     .dropdown .dropbtn {
         display: none;
     }
@@ -272,6 +272,33 @@ section {
     border-radius: 5px;
     display: inline-block;
     cursor: pointer;
+}
+
+.about {
+    justify-content: left;
+    text-align: left;
+    padding: 20px;
+}
+
+.about-center {
+    max-width: 750px;
+}
+
+.about-content {
+    max-width: 750px;
+    font-size: 20px;
+    margin: 0;
+    justify-content: left;
+}
+
+.section-header {
+    font-size: 30px;
+    font-weight: 750;
+}
+
+.section-text {
+    padding: 10px;
+    font-size: 20px;
 }
 
 .ending {
