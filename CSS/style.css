@@ -8,6 +8,7 @@ html{
 
 body {
     margin:0;
+    font-family: "NTR",sans-serif;
 }
 
 .logo{
@@ -23,6 +24,8 @@ body {
     text-decoration: none;
     display: block;
     padding: 10px 20px;
+    font-weight: 750;
+    letter-spacing: 2px;
 }
 
 #contact{
@@ -118,17 +121,21 @@ body {
 .profile {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 .home-header {
     justify-content: center;
     font-size: 45px;
+    font-weight: 800;
+    font-family: "NTR",sans-serif;
 }
 
 .home-info {
     justify-content: left;
     font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
 
 /* responsive layout -> make columns stack instead of next to each other on mobile screen */
@@ -165,7 +172,9 @@ body {
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
-	font-size: 15px;
+	font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .dropdown {
@@ -182,6 +191,9 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .dropdown-content{
@@ -191,6 +203,9 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 3;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .dropdown-content a{
@@ -204,16 +219,22 @@ body {
 
 .topnav a:hover, 
 .dropdown:hover .dropbtn {
-    color: black;
+    color: #E2B4BD
   }
 
 .dropdown-content a:hover {
-    background-color: #E2B4BD;
-    color: black;
+    color: #E2B4BD;
 }
 
+/*
 .dropdown:hover .dropdown-content { 
     display: block;
+}
+*/
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
 }
 
 /* media query to enable responsiveness */
@@ -328,6 +349,7 @@ section {
     border-radius: 5px;
     display: inline-block;
     cursor: pointer;
+    
 }
 
 .about {
@@ -346,16 +368,29 @@ section {
     font-size: 20px;
     margin: 0;
     justify-content: left;
+    font-family: "NTR", sans-serif;
+    letter-spacing: 1px;
 }
 
 .about-header {
     font-size: 30px;
-    font-weight: 750;
+    font-weight: 800;
+    letter-spacing: 1.5px;
 }
 
 .about-text {
     padding: 10px;
     font-size: 20px;
+}
+
+.about-text a{
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+}
+
+.about-text a:hover {
+    color: white;
 }
 
 .ending {
@@ -368,6 +403,7 @@ section {
 .tab {
     overflow: hidden;
     background-color: #93A8AC;
+    font-family: "NTR",sans-serif;
 }
   
 /* Style the buttons inside the tab */
@@ -380,6 +416,9 @@ section {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
+    font-family: "NTR",sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
   
 /* Change background color of buttons on hover */
@@ -397,4 +436,11 @@ section {
     display: none;
     padding: 6px 12px;
     border-top: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.section-header {
+    font-weight: 800;
+    letter-spacing: 1.5px;
 }
