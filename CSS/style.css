@@ -7,7 +7,6 @@ html{
 }
 
 body {
-    background-color: #EDF4ED;
     margin:0;
 }
 
@@ -29,7 +28,7 @@ body {
 #contact{
     justify-content: center;
     z-index: 0;
-    background:#90CAF9;
+    background:#93A8AC;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -70,7 +69,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    background: #EF9A9A;
+    background:white;
 }
 
 #about-me{
@@ -78,13 +77,13 @@ body {
     justify-content: center;
     z-index: 0;
     flex-wrap: wrap;
-    background: #FFE082;
+    background: #93A8AC;
     align-content: center;
 }
 
 #home {
-    background: #C5E1A5;
-    height: 750px;
+    background: white;
+    height: 1000px;
     z-index: 0;
     position: relative;
 }
@@ -102,16 +101,17 @@ body {
 
 .left {
     flex: 50%;
-    padding: 30px;
+    padding: 20px;
     align-items: center;
     top: 50%;
     left: 50%;
+    transform: translateY(10px);
 
 }
 
 .right {
     flex: 50%;
-    padding: 30px;
+    padding: 20x;
 
 }
 
@@ -187,7 +187,7 @@ body {
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: #EDF4ED;
+    background-color: #424B54;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 3;
@@ -195,7 +195,7 @@ body {
 
 .dropdown-content a{
     float: none;
-    color: black;
+    color: white;
     padding: 10px 10px;
     text-decoration: none;
     display: block;
@@ -323,7 +323,7 @@ section {
 }
 
 .button, .dropdown{
-    background-color:#424B54;
+    background-color: #424B54;
     color: #EDF4ED;
     border-radius: 5px;
     display: inline-block;
@@ -334,6 +334,7 @@ section {
     justify-content: left;
     text-align: left;
     padding: 20px;
+    transform: translateY(10px);
 }
 
 .about-center {
@@ -360,12 +361,13 @@ section {
 .ending {
     text-align: center;
     font-size: 15px;
+    background-color: white;
 }
 
 /* Style the tab */
 .tab {
     overflow: hidden;
-    background-color: #FFE082;
+    background-color: #93A8AC;
 }
   
 /* Style the buttons inside the tab */
@@ -387,7 +389,7 @@ section {
   
 /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #ccc;
+    background-color: #E2B4BD;
 }
   
 /* Style the tab content */
