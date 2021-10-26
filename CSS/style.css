@@ -27,6 +27,8 @@ body {
 }
 
 #contact{
+    justify-content: center;
+    z-index: 0;
     background:#90CAF9;
     display: flex;
     flex-wrap: wrap;
@@ -73,17 +75,69 @@ body {
 
 #about-me{
     display: flex;
+    justify-content: center;
+    z-index: 0;
     flex-wrap: wrap;
     background: #FFE082;
     align-content: center;
 }
 
 #home {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
     background: #C5E1A5;
+    height: 750px;
+    z-index: 0;
+    position: relative;
 }
+
+.row {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 50%;
+    padding: 30px;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+
+}
+
+.right {
+    flex: 50%;
+    padding: 30px;
+
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.home-header {
+    justify-content: center;
+    font-size: 45px;
+}
+
+.home-info {
+    justify-content: left;
+    font-size: 30px;
+}
+
+/* responsive layout -> make columns stack instead of next to each other on mobile screen */
+@media screen and (max-width: 600px) {
+    .row {   
+      flex-direction: column;
+    }
+}
+
 .topnav {
     background-color: #424B54;
     overflow: hidden;
@@ -162,6 +216,8 @@ body {
     display: block;
 }
 
+/* media query to enable responsiveness */
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), 
     .dropdown .dropbtn {
@@ -205,6 +261,8 @@ body {
     padding: 15px;
 }
 
+/* sticky to be added */
+
 .sticky {
     position: fixed;
     top: 0;
@@ -217,15 +275,15 @@ body {
 
 section {
     padding: 2rem;
-    display: flex;
-    justify-content: center;
-    z-index: 0;
+
 }
 
 .aboutme {
     margin:0 auto; 
     width:50%;
 }
+
+/* contact form */
 
 .contactform {
     margin:0 auto;
@@ -289,12 +347,12 @@ section {
     justify-content: left;
 }
 
-.section-header {
+.about-header {
     font-size: 30px;
     font-weight: 750;
 }
 
-.section-text {
+.about-text {
     padding: 10px;
     font-size: 20px;
 }
@@ -308,10 +366,10 @@ section {
 .tab {
     overflow: hidden;
     background-color: #FFE082;
-  }
+}
   
-  /* Style the buttons inside the tab */
-  .tab button {
+/* Style the buttons inside the tab */
+.tab button {
     background-color: inherit;
     float: left;
     border: 1px solid #ccc;
@@ -320,21 +378,21 @@ section {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-  }
+}
   
-  /* Change background color of buttons on hover */
-  .tab button:hover {
+/* Change background color of buttons on hover */
+.tab button:hover {
     background-color: #ddd;
-  }
+}
   
-  /* Create an active/current tablink class */
+/* Create an active/current tablink class */
   .tab button.active {
     background-color: #ccc;
-  }
+}
   
-  /* Style the tab content */
-  .tabcontent {
+/* Style the tab content */
+.tabcontent {
     display: none;
     padding: 6px 12px;
     border-top: none;
-  }
+}

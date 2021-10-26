@@ -1,3 +1,4 @@
+//responsive function
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -6,14 +7,16 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-    
+ 
+//defining sticky function
 window.onscroll = function (){
     stickyFunction()
 };
     
 var navbar = document.getElementById("myTopnav");
 var sticky = navbar.offsetTop;
-    
+
+//sticky function   
 function stickyFunction(){
     if (window.pageYOffset >= sticky){
         navbar.classList.add("sticky")
@@ -24,7 +27,7 @@ function stickyFunction(){
 
 document.getElementsByClassName('tablinks')[0].click()
 
-function clickHandle(evt, animalName) {
+function clickHandle(evt, jobName) {
     let i, tabcontent, tablinks;
   
     // This is to clear the previous clicked content.
@@ -40,6 +43,6 @@ function clickHandle(evt, animalName) {
     }
   
     // Display the clicked tab and set it to active.
-    document.getElementById(animalName).style.display = "block";
+    document.getElementById(jobName).style.display = "block";
     evt.currentTarget.className += " active";
   }    
