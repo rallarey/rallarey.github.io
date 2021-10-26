@@ -11,10 +11,16 @@ body {
     font-family: "NTR",sans-serif;
 }
 
+/* styling for name logo in top left */
 .logo{
     float: left;
     overflow: hidden;
 }
+
+.logo-span {
+    color: #93A8AC;
+}
+
 
 .logo a {
     color: #EDF4ED;
@@ -51,7 +57,6 @@ body {
 .contact {
     justify-content: center;
     text-align: center;
-    padding: 20px;
     max-width: 750px;
 }
 
@@ -219,11 +224,11 @@ body {
 
 .topnav a:hover, 
 .dropdown:hover .dropbtn {
-    color: #E2B4BD
+    color: #93A8AC;
   }
 
 .dropdown-content a:hover {
-    color: #E2B4BD;
+    color: #93A8AC;
 }
 
 /*
@@ -302,45 +307,6 @@ section {
 .aboutme {
     margin:0 auto; 
     width:50%;
-}
-
-/* contact form */
-
-.contactform {
-    margin:0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#contact-form{
-    width:50%;
-    display: inline-grid;
-    border-radius: 10px;
-}
-
-.field-label{
-    float: left;
-}
-
-.field-input{
-    float: right;
-    width: 50%;
-    padding: 12px 20px;
-    margin: 5px 0;
-    border: 1px solid #424B54;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-#submit{
-    justify-content: center;
-    align-items: center;
-    width: 15%;
-    border-radius: 5px;
-    margin: 25px;
-    padding: 15px 20px;
 }
 
 .button, .dropdown{
