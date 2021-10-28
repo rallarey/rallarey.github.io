@@ -115,7 +115,6 @@ section {
     
     font-size: 20px;
     margin: 0;
-    justify-content: left;
     font-family: "NTR", sans-serif;
     letter-spacing: 1px;
     transform: translateX(-75px);
@@ -438,11 +437,9 @@ grid-container ul{
     color: #93A8AC;
 }
 
-/*
 .dropdown:hover .dropdown-content { 
     display: block;
 }
-*/
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
