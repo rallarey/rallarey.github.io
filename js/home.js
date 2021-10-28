@@ -7,7 +7,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
- 
+
 //defining sticky function
 window.onscroll = function (){
     stickyFunction()
@@ -24,6 +24,7 @@ function stickyFunction(){
         navbar.classList.remove("sticky")
     }
 }
+
 
 document.getElementsByClassName('tablinks')[0].click()
 
@@ -51,6 +52,8 @@ function clickHandle(evt, jobName) {
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
+
+
 function dropFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -68,3 +71,4 @@ function dropFunction() {
       }
     }
   }
+  
