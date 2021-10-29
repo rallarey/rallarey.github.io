@@ -85,6 +85,10 @@ section {
     letter-spacing: 1.5px;
 }
 
+.contact-text {
+    float: right;
+}
+
 /* project section css */
 
 #portfolio{
@@ -524,3 +528,23 @@ section {
     font-size: 15px;
     background-color: white;
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #424B54;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }

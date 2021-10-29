@@ -17,10 +17,19 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 	
+	<!--
+		putting script here allows dropdown to open on hover everywhere, but disables stickyness
+		not sure why
+	-->
+	<script src = "js/home.js"></script>
+
 	<title>Personal Website</title>
 </head>
 
 <body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
 	<div class = "topnav" id="myTopnav">
 		<div class = "logo">
 			<a href="https://rallarey.github.io/">ryan<span class = "logo-span">Allarey</span></a>
@@ -259,5 +268,12 @@
 		<p>Built and designed by Ryan Allarey</p>
 		<p>All rights reserved. ©</p>
 	</footer>
-	<script src = "js/home.js"></script>
+
+	<!--putting tab script here keeps first tab open by default-->
+	<script src = "js/tabs.js"></script>
+	
+	<!--
+		putting script here causes dropdown to not open in different sections
+		<script src = "js/home.js"></script>
+	-->
 </body>
