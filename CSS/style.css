@@ -453,11 +453,6 @@ section {
 }
 
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-    display:block;
-}
-
 /* media query to enable responsiveness */
 
 @media screen and (max-width: 600px) {
@@ -529,6 +524,8 @@ section {
     background-color: white;
 }
 
+
+/* back to top button */
 #myBtn {
     display: none;
     position: fixed;

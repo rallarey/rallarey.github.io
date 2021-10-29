@@ -40,22 +40,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-/*
-//defining sticky function
-window.onscroll = function (){
-  stickyFunction()
-};
-
-var navbar = document.getElementById("myTopnav");
-var sticky = navbar.offsetTop;
-
-//sticky function   
-function stickyFunction(){
-  if (window.pageYOffset >= sticky){
-      navbar.classList.add("sticky")
-  } else {
-      navbar.classList.remove("sticky")
-  }
-}
-*/
