@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "NTR",sans-serif;
 }
 
 html{
@@ -17,6 +20,7 @@ section {
 }
 
 /* styling for name logo in top left */
+
 .logo{
     float: left;
     overflow: hidden;
@@ -111,6 +115,7 @@ section {
     font-size: 30px;
     font-weight: 800;
     letter-spacing: 1.5px;
+    padding-bottom: 10px;
 
 }
 
@@ -135,9 +140,10 @@ section {
     margin: 0;
     font-family: "NTR", sans-serif;
     letter-spacing: 1px;
-    transform: translateX(-75px);
+    transform: translateX(-50px);
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 }
 
 .projects-grid {
@@ -417,7 +423,7 @@ section {
 
 .dropdown-content{
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #424B54;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -446,17 +452,22 @@ section {
 }
 
 
+
 /* dropdown shows on hover */
+
 
 .dropdown:hover .dropdown-content { 
     display: block;
 }
 
 
+
 /* media query to enable responsiveness */
 
+
+
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child), 
+    .topnav a:not(:last-child), 
     .dropdown .dropbtn {
         display: none;
     }
@@ -494,17 +505,9 @@ section {
     }
 }
 
-/* sticky to be added to navbar on scroll */
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
 
-.sticky + .content {
-    padding-top: 60px;
-}
+
 
 /* button styling including dropdown button */
 
@@ -522,6 +525,7 @@ section {
     text-align: center;
     font-size: 15px;
     background-color: white;
+    padding: 20px;
 }
 
 
@@ -540,8 +544,8 @@ section {
     cursor: pointer;
     padding: 10px;
     border-radius: 4px;
-  }
+}
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #555;
-  }
+}
