@@ -245,12 +245,14 @@ section {
     justify-content: left;
     font-family: "NTR", sans-serif;
     letter-spacing: 1px;
+    padding-bottom: 15px;
 }
 
 .about-header {
     font-size: 30px;
     font-weight: 800;
     letter-spacing: 1.5px;
+    padding-bottom: 25px;
 }
 
 .about-text {
@@ -273,6 +275,7 @@ section {
     overflow: hidden;
     background-color: #93A8AC;
     font-family: "NTR",sans-serif;
+    padding-bottom: 15px;
 }
   
 /* Style the buttons inside the tab */
